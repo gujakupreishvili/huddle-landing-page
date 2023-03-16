@@ -1,0 +1,137 @@
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: #684BB1;
+  
+}
+.background-img{
+  width: 100%;
+  z-index: -1;
+  position: relative;
+}
+.logo-img{
+  /* margin-left: 40px;
+  margin-top: 40px; */
+  top: 5%;
+  width: 120px;
+  height: 20px;
+  z-index: 1;
+  position: absolute;
+}
+.maind-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.illustration{
+  margin-top: -63%;
+  position: absolute;
+  width: 296px;
+  height: 209px;
+  left: 8%;
+}
+.text-main-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.build-community{
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  line-height: 36px;
+  margin-bottom: 17px;
+  width: 304px;
+}
+.huddle{
+  text-align: center;
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+  color: white;
+  width: 304px;
+  margin-bottom: 24px;
+}
+.register{
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  color: #684BB1;
+  font-family: Poppins;
+  font-size: 12px;
+  margin-bottom: 64px;
+}
+.register:hover{
+  background-color: #E880E8;
+  cursor: pointer;
+  color: white;
+  transition: 0.15s;
+}
+.footer-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+.background-desktop-img{
+  display: none;
+}
+@media (min-width:1024px){
+  .background-desktop-img{
+    display: block;
+  }
+  .background-img{
+    display: none;
+  }
+  .logo-img{
+    width: 200px;
+    height: 34px;
+  }
+  .maind-div{
+    display: flex;
+    flex-direction: row;
+  }
+  .illustration{
+    width: 658px;
+    height: 411px;
+    position: absolute;
+    top: 165%;
+    left: 2%;
+    object-fit: contain;
+  }
+  .text-main-div{
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    justify-content: start;
+    align-items: start;
+  }
+  .build-community{
+    text-align: start;
+    width: 487px;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .huddle{
+    text-align: start;
+    width: 520px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .register{
+    height: 56px;
+    font-size: 18px;
+  }
+  .footer-div{
+    justify-content: end;
+    margin-right: 40px;
+    margin-bottom:40px ;
+  }
+}
